@@ -6,7 +6,7 @@ This is a data repository. Its main goal is to provide processed and machine lea
 Journal paper currently under review. Once it is published, the citation will be added here.
 
 ### Installation
-1. Install miniconda
+1. Install miniconda </br>
     wget https://docs.conda.io/en/latest/miniconda.html </br>
     ./Miniconda3-latest-Linux-x86_64.sh
 2. Install packages using pip
