@@ -1,22 +1,23 @@
 # A 10-Year Metocean Dataset for Laguna Madre, Texas Including for the Study of Extreme Cold Events
 ## Content
+This repository contains the code use 
 
 ## Publication
+Journal paper currently under review. Once it is published, the citation will be added here.
 
 ### Installation
 
 ### Quick start
+To reproduce the results
 
 ### Data Format
 
       data
-      	└── testingOrtho1
-      	    ├── training
-      	    │   ├── original (this directory contains all the original images) 
-      	    │   └── labeled  (this directory contains all the labeled images)
-      	    ├── testing
-      	    │   ├── original (this directory contains all the original images) 
-      	    │   └── labeled  (this directory contains all the labeled images)
-      	    └── validation
-      	        ├── original (this directory contains all the original images) 
-      	        └── labeled  (this directory contains all the labeled images)
+      	└── airTemperature
+                ├── baffinBay
+                ├── packeryChannel
+                └── southBirdIsland
+            └── waterTemperature
+                ├── nationalParkServiceBI
+                └── southBirdIsland
+            
