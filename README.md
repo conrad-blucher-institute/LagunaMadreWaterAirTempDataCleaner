@@ -9,9 +9,9 @@ Journal paper currently under review. Once it is published, the citation will be
 1. Install miniconda </br>
     wget https://docs.conda.io/en/latest/miniconda.html </br>
     ./Miniconda3-latest-Linux-x86_64.sh
-2. Install packages using pip
-   numpy == 1.23.2
-   pandas == 1.4.3
+2. Install packages using pip </br>
+   numpy == 1.23.2 </br>
+   pandas == 1.4.3 </br>
 
 ### Quick start
 To reproduce the results ...... (I will add it after the code review)
