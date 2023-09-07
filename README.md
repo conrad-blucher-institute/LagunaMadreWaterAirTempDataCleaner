@@ -1,6 +1,20 @@
 # A 10-Year Metocean Dataset for Laguna Madre, Texas Including for the Study of Extreme Cold Events
+
 ## Content
+
 This is a data repository. Its main goal is to provide processed and machine learning ready data. This repository contains both raw and post process Air Temperature (ATP) and Water Temperature (WTP). Additionally of containing the data, this repository also contains the code used to process the data.
+
+(Something about where it came from... and tell them to see more details in the publication)
+
+#### The contributions of this repository: 
+
+1. The raw ATP and WTP data from 3 South Texas TCOON stations.
+    - [South Bird Island](https://tidesandcurrents.noaa.gov/stationhome.html?id=8776139)
+    - [Packery Channel](https://tidesandcurrents.noaa.gov/stationhome.html?id=8775792)
+    - [Baffin Bay](https://tidesandcurrents.noaa.gov/stationhome.html?id=8776604)
+2. The final product of cleaned ATP and WTP data.
+3. The data cleaning code.
+4. A report of missing data for each station (before and after cleaning)
 
 ## Publication
 Journal paper currently under review. Once it is published, the citation will be added here.
@@ -14,105 +28,73 @@ Journal paper currently under review. Once it is published, the citation will be
    pandas == 1.4.3 </br>
 
 ### Quick start
-To reproduce the results ...... (I will add it after the code review)
 
-### Data Format
+**How to generate cleaned temperature data**
 
-      rawData
-            └── airTemperature
-                ├── baffinBay
-                    ├── baffinBay_2009
-                    ├── baffinBay_2010
-                    ├── baffinBay_2011
-                    ├── baffinBay_2012
-                    ├── baffinBay_2013
-                    ├── baffinBay_2014
-                    ├── baffinBay_2015
-                    ├── baffinBay_2016
-                    ├── baffinBay_2017
-                    ├── baffinBay_2018
-                    ├── baffinBay_2019
-                    ├── baffinBay_2020
-                    ├── baffinBay_2021
-                    ├── baffinBay_2022
-                    └── baffinBay_2023
-                ├── packeryChannel
-                    ├── packeryChannel_2009
-                    ├── packeryChannel_2010
-                    ├── packeryChannel_2011
-                    ├── packeryChannel_2012
-                    ├── packeryChannel_2013
-                    ├── packeryChannel_2014
-                    ├── packeryChannel_2015
-                    ├── packeryChannel_2016
-                    ├── packeryChannel_2017
-                    ├── packeryChannel_2018
-                    ├── packeryChannel_2019
-                    ├── packeryChannel_2020
-                    ├── packeryChannel_2021
-                    ├── packeryChannel_2022
-                    └── packeryChannel_2023
-                └── southBirdIsland
-                    ├── southBirdIsland_2009
-                    ├── southBirdIsland_2010
-                    ├── southBirdIsland_2011
-                    ├── southBirdIsland_2012
-                    ├── southBirdIsland_2013
-                    ├── southBirdIsland_2014
-                    ├── southBirdIsland_2015
-                    ├── southBirdIsland_2016
-                    ├── southBirdIsland_2017
-                    ├── southBirdIsland_2018
-                    ├── southBirdIsland_2019
-                    ├── southBirdIsland_2020
-                    ├── southBirdIsland_2021
-                    ├── southBirdIsland_2022
-                    └── southBirdIsland_2023
-            └── waterTemperature
-                ├── nationalParkServiceBI
-                    ├── nationalParkServiceBI_2009
-                    ├── nationalParkServiceBI_2010
-                    ├── nationalParkServiceBI_2011
-                    ├── nationalParkServiceBI_2012
-                    ├── nationalParkServiceBI_2013
-                    ├── nationalParkServiceBI_2014
-                    ├── nationalParkServiceBI_2015
-                    ├── nationalParkServiceBI_2016
-                    ├── nationalParkServiceBI_2017
-                    ├── nationalParkServiceBI_2018
-                    ├── nationalParkServiceBI_2019
-                    ├── nationalParkServiceBI_2020
-                    ├── nationalParkServiceBI_2021
-                    ├── nationalParkServiceBI_2022
-                    └── nationalParkServiceBI_2023
-                └── southBirdIsland
-                    ├── southBirdIsland_2009
-                    ├── southBirdIsland_2010
-                    ├── southBirdIsland_2011
-                    ├── southBirdIsland_2012
-                    ├── southBirdIsland_2013
-                    ├── southBirdIsland_2014
-                    ├── southBirdIsland_2015
-                    ├── southBirdIsland_2016
-                    ├── southBirdIsland_2017
-                    ├── southBirdIsland_2018
-                    ├── southBirdIsland_2019
-                    ├── southBirdIsland_2020
-                    ├── southBirdIsland_2021
-                    ├── southBirdIsland_2022
-                    └── southBirdIsland_2023
+    python dataPreprocessing_main.py \
+        -d data/ \   # Path to directory with input ATP and WTP files
+        -o out/ \    # Path to directory to write cleaned output files
+        -s 2009 \    # First year to process
+        -e 2023      # Final year to process
 
-      finalDataset
-             ├── atp_and_wtp_2012
-             ├── atp_and_wtp_2013
-             ├── atp_and_wtp_2014
-             ├── atp_and_wtp_2015
-             ├── atp_and_wtp_2016
-             ├── atp_and_wtp_2017
-             ├── atp_and_wtp_2018
-             ├── atp_and_wtp_2019
-             ├── atp_and_wtp_2020
-             ├── atp_and_wtp_2021
-             └── atp_and_wtp_2022
-      
-            
+**Example run**
+
+    $ python dataPreprocessing_main.py -d data/ -o out/ -s 2009 -e 2022
+    Water & Air Temp PreProcessing Pipeline
+      Input data directory: data/
+      Output data directory: out/
+      Processing years 2009 - 2022.
+
+    Year 2009  (1 / 14)
+    Year 2010  (2 / 14)
+    Year 2011  (3 / 14)
+    Year 2012  (4 / 14)
+    Year 2013  (5 / 14)
+    Year 2014  (6 / 14)
+    Year 2015  (7 / 14)
+    Year 2016  (8 / 14)
+    Year 2017  (9 / 14)
+    Year 2018  (10 / 14)
+    Year 2019  (11 / 14)
+    Year 2020  (12 / 14)
+    Year 2021  (13 / 14)
+    Year 2022  (14 / 14)
+
+### Input Data
+
+- Inputs are ATP and WTP files where each year has a single file.
+- The raw input files are available in `data/`.
+
+Example ATP file (2009, South Bird Island):
+
+    $ head -n 5 data/airTemperature/southBirdIsland/lighthouse/southBirdIsland_2009.csv 
+    #date+time,013-atp
+    "01-01-2009 0000",NA
+    "01-01-2009 0100",NA
+    "01-01-2009 0200",NA
+    "01-01-2009 0300",NA
+
+Example WTP file (2009, South Bird Island):
+
+    $ head -n 5 data/waterTemperature/southBirdIsland/lighthouse/southBirdIsland_2009.csv 
+    #date+time,013-wtp
+    "01-01-2009 0000",17.9
+    "01-01-2009 0100",NA
+    "01-01-2009 0200",NA
+    "01-01-2009 0300",NA
+
+### Output Data
+
+- This repo produced cleaned ATP & WTP data.
+- The output data is generated with `dataPreprocessing_main.py`.
+- Pre-computed output files are available in `out/`.
+- Missing data reports are in `out/missingValues/`.
+
+Example output file (2012):
+
+    $ head -n 5 out/atp_and_wtp_2012.csv
+    dateAndTime,packeryATP_lighthouse,npsbiWTP_lighthouse
+    01-01-2012 0000,18.8,17.7
+    01-01-2012 0100,18.9,17.6
+    01-01-2012 0200,18.7,17.5
+    01-01-2012 0300,19.7,17.4
