@@ -2,7 +2,7 @@
 
 ## Content
 
-The main goal of this data repository is to provide processed and machine learning ready data. The dataset within the repository consists of 10 years of Air Temperature (ATP) and Water Temperature (WTP) measurements from 2012 - 2022 extracted from the Texas Coastal Ocean Observation Network (TCOON; [NOAA Tides and Currents](https://tidesandcurrents.noaa.gov/tcoon.html)). This repository also contains both raw and post-processed data within the Laguna Madre, TX and also contains the code used to process to data.
+The main goal of this data repository is to provide processed and machine learning ready data. The dataset within the repository consists of 10 years of Air Temperature (ATP) and Water Temperature (WTP) measurements from 2012 - 2022 extracted from the Texas Coastal Ocean Observation Network (TCOON; [TCOON measurements](http://lighthouse.tamucc.edu/)). This repository also contains both raw and post-processed data within the Laguna Madre, TX and also contains the code used to process to data.
 
 #### The contributions of this repository: 
 
