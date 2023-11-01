@@ -125,19 +125,20 @@ def replacingMissValWithNearStation(df, stationToInterpolate, stationUsedToInter
                             # If the difference between stations is not a missing value then we fill the gap using the value from the near station 
                             # corrected by adding the difference between the stations
                             if(avgDifferenceStations != -999):
+                                if abs(differenceBetweenStationsStart - differenceBetweenStationsEnd) < 1.5:
 
-                                for j in range(counter):  
-
-                                    # Checking that the nearby station does not have a missing value for the current row
-                                    if(realValTemp[j] == -999 or realValTemp[j] == -999.0):
-                                        newValue = -999
-
-                                    else:
-                                        newValue = round(realValTemp[j] + avgDifferenceStations,1)
-
-                                    # Filling the missing value with a corrected value from the near station
-                                    df.at[firstMissValPos + j, stationToInterpolate] = newValue
-                                    interVal.append(newValue)  
+                                    for j in range(counter):  
+    
+                                        # Checking that the nearby station does not have a missing value for the current row
+                                        if(realValTemp[j] == -999 or realValTemp[j] == -999.0):
+                                            newValue = -999
+    
+                                        else:
+                                            newValue = round(realValTemp[j] + avgDifferenceStations,1)
+    
+                                        # Filling the missing value with a corrected value from the near station
+                                        df.at[firstMissValPos + j, stationToInterpolate] = newValue
+                                        interVal.append(newValue)  
 
                                 # Empty the list storing the values of the nearby station
                                 realValTemp = []

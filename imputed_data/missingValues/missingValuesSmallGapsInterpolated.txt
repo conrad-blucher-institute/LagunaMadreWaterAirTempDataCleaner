@@ -4,8 +4,8 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 8760 --> 100.0 %
 Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 8760 --> 100.0 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 331 --> 3.7785 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 1337 --> 15.2626 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 380 --> 4.3379 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 1472 --> 16.8037 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
@@ -14,8 +14,8 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 8760 --> 100.0 %
 Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 8760 --> 100.0 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 22 --> 0.2511 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 254 --> 2.8995 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 29 --> 0.3311 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 314 --> 3.5845 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
@@ -24,8 +24,8 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 5065 --> 57.8196 %
 Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 8760 --> 100.0 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 25 --> 0.2854 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 408 --> 4.6575 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 33 --> 0.3767 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 489 --> 5.5822 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
@@ -33,19 +33,19 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 2012
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 0 --> 0.0 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 1120 --> 12.7505 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 1 --> 0.0114 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 133 --> 1.5141 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 1124 --> 12.796 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 7 --> 0.0797 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 209 --> 2.3793 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2013
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 58 --> 0.6621 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 0 --> 0.0 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 102 --> 1.1644 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 743 --> 8.4817 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 63 --> 0.7192 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 5 --> 0.0571 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 104 --> 1.1872 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 776 --> 8.8584 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
@@ -53,19 +53,19 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 2014
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 0 --> 0.0 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 3 --> 0.0342 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 326 --> 3.7215 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 671 --> 7.6598 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 5 --> 0.0571 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 334 --> 3.8128 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 672 --> 7.6712 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2015
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 0 --> 0.0 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 3 --> 0.0342 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 2582 --> 29.4749 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 44 --> 0.5023 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 2 --> 0.0228 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 14 --> 0.1598 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 2584 --> 29.4977 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 45 --> 0.5137 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
@@ -73,69 +73,69 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 2016
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 1 --> 0.0114 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 28 --> 0.3188 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 244 --> 2.7778 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 0 --> 0.0 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 37 --> 0.4212 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 251 --> 2.8575 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 4 --> 0.0455 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2017
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 11 --> 0.1256 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 65 --> 0.742 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 2263 --> 25.8333 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 55 --> 0.6279 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 15 --> 0.1712 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 74 --> 0.8447 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 2268 --> 25.8904 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 56 --> 0.6393 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2018
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 105 --> 1.1986 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 237 --> 2.7055 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 171 --> 1.9521 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 790 --> 9.0183 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 112 --> 1.2785 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 249 --> 2.8425 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 177 --> 2.0205 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 792 --> 9.0411 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2019
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 88 --> 1.0046 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 158 --> 1.8037 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 2454 --> 28.0137 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 6 --> 0.0685 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 94 --> 1.0731 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 161 --> 1.8379 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 2457 --> 28.0479 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 7 --> 0.0799 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2020
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 888 --> 10.1093 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 342 --> 3.8934 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 6415 --> 73.0305 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 0 --> 0.0 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 897 --> 10.2117 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 347 --> 3.9504 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 6426 --> 73.1557 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 6 --> 0.0683 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2021
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 1594 --> 18.1963 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 1736 --> 19.8174 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 393 --> 4.4863 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 0 --> 0.0 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 1604 --> 18.3105 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 1747 --> 19.9429 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 415 --> 4.7374 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 4 --> 0.0457 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
 
 2022
 
-Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 22 --> 0.2511 %
-Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 18 --> 0.2055 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 173 --> 1.9749 %
-National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 35 --> 0.3995 %
+Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 28 --> 0.3196 %
+Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 30 --> 0.3425 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 190 --> 2.1689 %
+National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 55 --> 0.6279 %
 
 
 MISSING VALUES - SMALL GAPS INTERPOLATED
@@ -144,7 +144,7 @@ MISSING VALUES - SMALL GAPS INTERPOLATED
 
 Packery Channel Missing Values for the Air Temperature from Lighthouse                                = 7416 --> 84.6575 %
 Baffin Bay Missing Values for the Air Temperature from Lighthouse                                     = 7417 --> 84.6689 %
-South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 7552 --> 86.21 %
+South Bird Island Missing Values for the Water Temperature from Lighthouse                            = 7553 --> 86.2215 %
 National Park Services - South Bird Island Missing Values for the Water Temperature from Lighthouse   = 7397 --> 84.4406 %
 
 

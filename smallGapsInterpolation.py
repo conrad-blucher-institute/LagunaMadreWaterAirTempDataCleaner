@@ -45,7 +45,17 @@ def interpolatingSmallGaps(df, varToInterp, interpGap):
                         meanPreviousThree = -999
                         
                     else:
-                        meanPreviousThree = (df[varToInterp][i-1] + df[varToInterp][i-2] + df[varToInterp][i-3]) / 3
+                        # If there is a differences of 2 degrees within the previous three values, then we do not interpolate them
+                        prevVal = [df[varToInterp][i-1], df[varToInterp][i-2], df[varToInterp][i-3]]
+
+                        maxVal = max(prevVal)
+                        minVal = min(prevVal)
+
+                        if abs(maxVal - minVal) < 1.5:
+                            meanPreviousThree = (df[varToInterp][i-1] + df[varToInterp][i-2] + df[varToInterp][i-3]) / 3
+
+                        else:
+                            meanPreviousThree = -999
 
                 else:
                     meanPreviousThree = -999
@@ -72,13 +82,25 @@ def interpolatingSmallGaps(df, varToInterp, interpGap):
                     # If all of the three rows after the gap does not contain a missing values then, we compute the 
                     # average of the next three values
                     if (df[varToInterp][i+1] != -999 and df[varToInterp][i+2] != -999 and df[varToInterp][i+3] != -999 ):
-                        meanNextThree = (df[varToInterp][i+1] + df[varToInterp][i+2] + df[varToInterp][i+3]) / 3
+                        
+                        # If there is a differernce of 2 degrees withing the next three values, then we do not interpolate them
+                        nextVal = [df[varToInterp][i+1], df[varToInterp][i+2], df[varToInterp][i+3]]
+
+                        maxNextVal = max(nextVal)
+                        minNextVal = min(nextVal)
+
+                        if abs(maxNextVal - minNextVal) < 1.5:
+                            meanNextThree = (df[varToInterp][i+1] + df[varToInterp][i+2] + df[varToInterp][i+3]) / 3
+
+                        else:
+                            meanNextThree = -999
 
                         # If the mean of the previous three values contains a misisng values then, the filling values 
                         # is set to -999
                         if(meanPreviousThree == -999):
                             stepValue = 0
                             fillingValue = -999
+                        
 
                         # If the previous three values to the beginning of the gap and the next three values after the 
                         # end of the gap do not contain a missing value, then we need to compute the values for the 
@@ -87,22 +109,33 @@ def interpolatingSmallGaps(df, varToInterp, interpGap):
                         # of the previous three values. Then, we just found the filling value for the first missing
                         # value of the gap
                         else:
-                            stepValue = (meanNextThree - meanPreviousThree) / (counter + 1)
-                            fillingValue = round(meanPreviousThree + stepValue,1)
+                            # Creating a condition to fill only gaps when the difference between the average
+                            # before and after the gap is smaller than 3 degrees
+                            if abs(meanPreviousThree - meanNextThree) < 1.5:    
+                                stepValue = (meanNextThree - meanPreviousThree) / (counter + 1)
+                                fillingValue = round(meanPreviousThree + stepValue,1)
+
+                            else:
+                                fillingValue = -999
 
                     # This loop will fill the rest of the missing values in the gap
                     for j in range(counter):
                         
-                        # Checking that we are not in the first missing value of the gap. If so, the filling value
-                        # would be the incremental of the prevous value filled with the step value
-                        if j != 0:
-                            fillingValue = round(fillingValue + stepValue,1)
+                        if fillingValue != -999:
+                            # Checking that we are not in the first missing value of the gap. If so, the filling value
+                            # would be the incremental of the prevous value filled with the step value
+                            if j != 0:
+                                fillingValue = round(fillingValue + stepValue,1)
 
-                        # Filling the missig gaps
-                        df.at[firstMissValPos + j, varToInterp] = fillingValue 
-                        interVal.append(fillingValue) 
+                            # Filling the missig gaps
+                            df.at[firstMissValPos + j, varToInterp] = fillingValue 
+                            
+                            if (fillingValue != -999):
+                                if (df[varToInterp][firstMissValPos + j] != -999):
+                                    interVal.append(fillingValue) 
+                                    
 
-               
+                """
                 # If the gap is in the first or last three rows of the dataset, we fill the gap with -999
                 else:
                     # Checking if exists a gap
@@ -114,6 +147,7 @@ def interpolatingSmallGaps(df, varToInterp, interpGap):
                             fillingValue = -999
                             df.at[firstMissValPos + jj, varToInterp] = fillingValue 
                             interVal.append(fillingValue) 
+                """
                  
                                
             # Setting the counter to 0, the small gap has been interpolated
