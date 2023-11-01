@@ -32,16 +32,16 @@ Journal paper currently under review. Once it is published, the citation will be
 
     python dataPreprocessing_main.py \
         -d unprocessed_data/ \   # Path to directory with input ATP and WTP files
-        -o out/ \    # Path to directory to write cleaned output files
-        -s 2009 \    # First year to process
-        -e 2023      # Final year to process
+        -o imputed_data/ \       # Path to directory to write cleaned output files
+        -s 2009 \                # First year to process
+        -e 2023                  # Final year to process
 
 **Example run**
 
-    $ python dataPreprocessing_main.py -d unprocessed_data/ -o out/ -s 2009 -e 2022
+    $ python dataPreprocessing_main.py -d unprocessed_data/ -o imputed_data/ -s 2009 -e 2022
     Water & Air Temp PreProcessing Pipeline
       Input data directory: unprocessed_data/
-      Output data directory: out/
+      Output data directory: imputed_data/
       Processing years 2009 - 2022.
 
     Year 2009  (1 / 14)
@@ -86,12 +86,12 @@ Example WTP file (2009, South Bird Island):
 
 - This repo produced cleaned ATP & WTP data.
 - The output data is generated with `dataPreprocessing_main.py`.
-- Pre-computed output files are available in `out/`.
-- Missing data reports are in `out/missingValues/`.
+- Pre-computed output files are available in `imputed_data/`.
+- Missing data reports are in `imputed_data/missingValues/`.
 
 Example output file (2012):
 
-    $ head -n 5 out/atp_and_wtp_2012.csv
+    $ head -n 5 imputed_data/atp_and_wtp_2012.csv
     dateAndTime,packeryATP_lighthouse,npsbiWTP_lighthouse
     01-01-2012 0000,18.8,17.7
     01-01-2012 0100,18.9,17.6
