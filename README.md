@@ -10,7 +10,7 @@ The main goal of this data repository is to provide processed and machine learni
     - [South Bird Island; Station 013](https://tidesandcurrents.noaa.gov/stationhome.html?id=8776139)
     - [Packery Channel; Station 005](https://tidesandcurrents.noaa.gov/stationhome.html?id=8775792)
     - [Baffin Bay; Station 013](https://tidesandcurrents.noaa.gov/stationhome.html?id=8776604)
-    - National Park Service- South Bird Island; Station 171
+    - National Park Service - South Bird Island; Station 171
 2. The final product of cleaned ATP and WTP data representative of the Upper Laguna Madre, TX system
 3. The data cleaning code
 4. A report of missing data for each station (before and after cleaning)
