@@ -20,7 +20,7 @@ Journal paper currently under review. Once it is published, the citation will be
 
 ## Repository DOIs
 
-- **v1.0: ** [10.5281/zenodo.10064703](https://zenodo.org/records/10064703) 
+- **v1.0:** [10.5281/zenodo.10064703](https://zenodo.org/records/10064703) 
 
 ### Installation
 1. Install miniconda </br>
