@@ -60,7 +60,7 @@ normalYear_dates_template = "dates_normalYear.csv"
 packeryATP_lighthouse_template = "/airTemperature/packeryChannel/lighthouse/packeryChannel_{}.csv"
 baffinATP_lighthouse_template = "/airTemperature/baffinBay/lighthouse/baffinBay_{}.csv"
 sbiWTP_lighthouse_template = "/waterTemperature/southBirdIsland/lighthouse/southBirdIsland_{}.csv"
-npsbiWTP_lighthouse_template = "/waterTemperature/nationalParkServiceBI/lighthouse/nationalParkServiceBI_{}.csv"
+npsbiWTP_lighthouse_template = "/waterTemperature/nationalParkService_southBirdIsland/lighthouse/nationalParkServiceBI_{}.csv"
 
 """
 readingData() reads all the data from different files into an unique dataframe
@@ -256,10 +256,10 @@ def main():
     parser = OptionParser()
     parser.add_option("-d", "--data_dir", 
                       help="Path to directory with air and water temperature input data.",
-                      default="data/")
+                      default="unprocessed_data/")
     parser.add_option("-o", "--out_dir",
                       help="Path to directory to store processed dataset.",
-                      default="out/")
+                      default="imputed_data/")
     parser.add_option("-q", "--quiet",
                       help="Suppress all print messages.",
                       default=False,
