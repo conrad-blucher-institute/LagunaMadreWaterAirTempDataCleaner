@@ -18,6 +18,10 @@ The main goal of this data repository is to provide processed and machine learni
 ## Publication
 Journal paper currently under review. Once it is published, the citation will be added here.
 
+## Repository DOIs
+
+- **v1.0: ** [10.5281/zenodo.10064703](https://zenodo.org/records/10064703) 
+
 ### Installation
 1. Install miniconda </br>
     `wget https://docs.conda.io/en/latest/miniconda.html` </br>
