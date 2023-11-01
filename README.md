@@ -31,16 +31,16 @@ Journal paper currently under review. Once it is published, the citation will be
 **How to generate cleaned temperature data**
 
     python dataPreprocessing_main.py \
-        -d data/ \   # Path to directory with input ATP and WTP files
+        -d unprocessed_data/ \   # Path to directory with input ATP and WTP files
         -o out/ \    # Path to directory to write cleaned output files
         -s 2009 \    # First year to process
         -e 2023      # Final year to process
 
 **Example run**
 
-    $ python dataPreprocessing_main.py -d data/ -o out/ -s 2009 -e 2022
+    $ python dataPreprocessing_main.py -d unprocessed_data/ -o out/ -s 2009 -e 2022
     Water & Air Temp PreProcessing Pipeline
-      Input data directory: data/
+      Input data directory: unprocessed_data/
       Output data directory: out/
       Processing years 2009 - 2022.
 
@@ -62,11 +62,11 @@ Journal paper currently under review. Once it is published, the citation will be
 ### Input Data
 
 - Inputs are ATP and WTP files where each year has a single file.
-- The raw input files are available in `data/`.
+- The raw input files are available in `unprocessed_data/`.
 
 Example ATP file (2009, South Bird Island):
 
-    $ head -n 5 data/airTemperature/southBirdIsland/lighthouse/southBirdIsland_2009.csv 
+    $ head -n 5 unprocessed_data/airTemperature/southBirdIsland/lighthouse/southBirdIsland_2009.csv 
     #date+time,013-atp
     "01-01-2009 0000",NA
     "01-01-2009 0100",NA
@@ -75,7 +75,7 @@ Example ATP file (2009, South Bird Island):
 
 Example WTP file (2009, South Bird Island):
 
-    $ head -n 5 data/waterTemperature/southBirdIsland/lighthouse/southBirdIsland_2009.csv 
+    $ head -n 5 unprocessed_data/waterTemperature/southBirdIsland/lighthouse/southBirdIsland_2009.csv 
     #date+time,013-wtp
     "01-01-2009 0000",17.9
     "01-01-2009 0100",NA
