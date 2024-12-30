@@ -16,7 +16,11 @@ The main goal of this data repository is to provide processed and machine learni
 4. A report of missing data for each station (before and after cleaning)
 
 ## Publication
-Journal paper currently under review. Once it is published, the citation will be added here.
+
+    White, M. C., Vicens-Miquel, M., Tissot, P., & Krell, E. (2024). A 10-year Metocean dataset for 
+    Laguna Madre, Texas, including for the Study of Extreme Cold Events. Data in Brief, 52, 109828.
+
+[Link to publication](https://www.data-in-brief.com/article/S2352-3409(23)00890-9/pdf)
 
 ## Repository DOIs
 
